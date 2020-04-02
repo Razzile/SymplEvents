@@ -26,12 +26,13 @@ manager.Subscribe<std::string, int>(
 manager.Send<std::string, int>("hello", "Fox", 10);
 ```
 
-### Delegates
+#### Delegates
 Using the delegate class you can impement your own event handler within your own classes.
 Below is a hypothetical use case for delegates:
 
 ```cpp
 using symplevents::Delegate;
+
 class Button {
  public:
     // constructors and methods etc...
